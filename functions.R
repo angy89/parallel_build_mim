@@ -3,7 +3,7 @@
 # The function uses the foreach and doMC function for parallelization purpuse
 # Mutual information is evaluated by using the infotheo package
 
-par_build_mim = function (dataset, estimator = "spearman", disc = "none", nbins = sqrt(NROW(dataset)),nCores=nCores) 
+par_build_mim = function (dataset, estimator = "spearman", disc = "none", nbins = sqrt(NROW(dataset)),nCores=1) 
 {
   require(infotheo)
   require(foreach)
